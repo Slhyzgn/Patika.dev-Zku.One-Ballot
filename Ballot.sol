@@ -114,7 +114,7 @@ contract Ballot {
 
 
 
-     
+    // Added modifier
     function vote(uint proposal) public voteEnded {
         Voter storage sender = voters[msg.sender];
         require(sender.weight != 0, "Has no right to vote");
